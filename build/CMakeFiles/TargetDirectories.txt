@@ -1,0 +1,9 @@
+/home/mariosconsta/cicd-demo/build/CMakeFiles/hello_mpi_hdf5.dir
+/home/mariosconsta/cicd-demo/build/CMakeFiles/verify_hdf5.dir
+/home/mariosconsta/cicd-demo/build/CMakeFiles/test.dir
+/home/mariosconsta/cicd-demo/build/CMakeFiles/edit_cache.dir
+/home/mariosconsta/cicd-demo/build/CMakeFiles/rebuild_cache.dir
+/home/mariosconsta/cicd-demo/build/CMakeFiles/list_install_components.dir
+/home/mariosconsta/cicd-demo/build/CMakeFiles/install.dir
+/home/mariosconsta/cicd-demo/build/CMakeFiles/install/local.dir
+/home/mariosconsta/cicd-demo/build/CMakeFiles/install/strip.dir

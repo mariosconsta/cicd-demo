@@ -1,0 +1,39 @@
+Start testing: Oct 02 12:10 UTC
+----------------------------------------------------------
+1/2 Testing: RunMPIProgram
+1/2 Test: RunMPIProgram
+Command: "/cvmfs/software.eessi.io/versions/2023.06/software/linux/x86_64/amd/zen3/software/OpenMPI/4.1.6-GCC-13.2.0/bin/mpiexec" "-n" "4" "/home/mariosconsta/cicd-demo/build/hello_mpi_hdf5"
+Directory: /home/mariosconsta/cicd-demo/build
+"RunMPIProgram" start time: Oct 02 12:10 UTC
+Output:
+----------------------------------------------------------
+Rank 3 wrote value 3 to file 'parallel_hello.h5'
+Rank 0 wrote value 0 to file 'parallel_hello.h5'
+Rank 1 wrote value 1 to file 'parallel_hello.h5'
+Rank 2 wrote value 2 to file 'parallel_hello.h5'
+<end of output>
+Test time =  32.36 sec
+----------------------------------------------------------
+Test Passed.
+"RunMPIProgram" end time: Oct 02 12:11 UTC
+"RunMPIProgram" time elapsed: 00:00:32
+----------------------------------------------------------
+
+2/2 Testing: VerifyHDF5Output
+2/2 Test: VerifyHDF5Output
+Command: "/home/mariosconsta/cicd-demo/build/verify_hdf5"
+Directory: /home/mariosconsta/cicd-demo/build
+"VerifyHDF5Output" start time: Oct 02 12:11 UTC
+Output:
+----------------------------------------------------------
+Verifying dataset: 0 1 2 3 
+Verification successful.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"VerifyHDF5Output" end time: Oct 02 12:11 UTC
+"VerifyHDF5Output" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 02 12:11 UTC
