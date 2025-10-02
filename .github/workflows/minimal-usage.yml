@@ -12,10 +12,7 @@ jobs:
     - uses: eessi/github-action-eessi@v3
     - name: Test building with EESSI
       run: |
-        module load HDF5 CMake buildenv
-        mkdir build
-        cd build/
-        cmake ..
-        make -j
-        ctest --output-on-failure --verbose
+        module load EESSI-extend
+        unset EASYBUILD_DEBUG
+        eb --logtostdout --software-commit=$GITHUB_SHA easybuild/cicd-demo.eb
       shell: bash
