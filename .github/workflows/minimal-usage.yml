@@ -1,3 +1,4 @@
+on: [push, pull_request]
 jobs:
   ubuntu-minimal:
     runs-on: ${{ matrix.os }}
